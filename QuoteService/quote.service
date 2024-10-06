@@ -3,8 +3,8 @@ Description=Quote Service Application
 After=network.target
 
 [Service]
-User=root
-WorkingDirectory=/opt/QuoteService
+User=kranthij307
+WorkingDirectory=/opt/QuoteService/QuoteService
 ExecStart= /bin/bash -c '/opt/QuoteService/venv/bin/python /opt/QuoteService/QuoteService/main.py'
 Restart=always
 
