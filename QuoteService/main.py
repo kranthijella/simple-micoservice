@@ -58,7 +58,7 @@ def quote():
         else:
             return jsonify({"quote": "No quotes found", "by": "Unknown", "count": count})
     except:
-        pass
+       return  jsonify({"message": "unknown error"})
     finally:
         if type(db)==MongoClient:
             db.close()
