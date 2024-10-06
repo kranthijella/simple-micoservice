@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Environment="QUOTES_API=http://localhost:5000"
-User=bryandixon
+User=root
 WorkingDirectory=/opt/ApiGateway/
 ExecStart=npm run start
 Restart=always
