@@ -57,7 +57,7 @@ def quote():
             return jsonify({"quote": result['quote'], "by": result['author'], "count": count})
         else:
             return jsonify({"quote": "No quotes found", "by": "Unknown", "count": count})
-    except:
+    except Exception as e:
        return jsonify({"message": "An error occurred", "error": str(e)})
 
     finally:
