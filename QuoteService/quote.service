@@ -6,7 +6,7 @@ After=network.target
 User=kranthij307
 WorkingDirectory=/opt/QuoteService/QuoteService/
 ExecStart= /bin/bash -c '/opt/QuoteService/venv/bin/python3 /opt/QuoteService/QuoteService/main.py'
-Restart=always
+Restart=no
 
 [Install]
 WantedBy=multi-user.target
