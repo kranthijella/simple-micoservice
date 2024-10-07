@@ -6,9 +6,8 @@ After=network.target
 User=kranthij307
 WorkingDirectory=/opt/QuoteService/QuoteService/
 ExecStart= /bin/bash -c '/opt/QuoteService/venv/bin/python3 /opt/QuoteService/QuoteService/main.py'
-Restart=no
-
-ExecStartPre=/bin/bash -c 'if pgrep -f "/opt/QuoteService/QuoteService/main.py"; then exit 1; fi'
+Restart=on-failure
+RestartSec=5s
 
 
 [Install]
