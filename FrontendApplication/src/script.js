@@ -15,7 +15,7 @@ $(document).ready(function() {
             error: function(xmlhttprequest, textstatus, message) {
                 $("#quote").removeClass('is-link')
                 $("#quote").addClass('is-danger')
-                console.error('Error details:', textStatus, errorThrown);
+                console.error('Error details:', textstatus, message);
 
                 if(textstatus==="timeout") {
                     $( "#quote" ).html("got timeout");
