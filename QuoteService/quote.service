@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=kranthij307
 WorkingDirectory=/opt/QuoteService/QuoteService/
-ExecStart= /bin/bash -c '/opt/QuoteService/venv/bin/python3 /opt/QuoteService/QuoteService/main.py'
+ExecStart= /bin/bash -c '/opt/QuoteService/venv/bin/python3 /opt/QuoteService/main.py'
 Restart=always
 
 
